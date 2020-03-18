@@ -1,0 +1,134 @@
+:root {
+  --wild-watermelon: #ff6b81;
+  --watermelon: #ff4757;
+  --lime-soap: #7bed9f;
+  --ufo: #2ed573;
+  --coral: #ff7f50;
+  --tomato: #ff6348;
+  --prestige: #2f3542;
+  --grisaille: #57606f;
+  --pacifico-title: 'Pacifico', sans-serif;
+  --indie-text: 'Indie Flower', sans-serif;
+  --patrick: 'Patrick Hand', sans-serif;
+  --kosugi: 'Kosugi Maru', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-size: 62.5%;
+  color: var(--prestige);
+}
+
+/* Universal */
+
+.App {
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  background-color: var(--lime-soap);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-family: var(--patrick);
+  padding: 20px 100px;
+}
+
+a.active {
+  color: white;
+  background-color: var(--ufo);
+}
+
+.App h1 {
+  font-family: var(--pacifico-title);
+  font-size: 3rem;
+}
+
+h1.jpn {
+  margin-top: 200px;
+  font-family: var(--kosugi);
+}
+
+/* Cat Facts */
+
+.get-button {
+  font-size: 1.4rem;
+  font-family: var(--patrick);
+  padding: 7px 20px;
+  background: var(--wild-watermelon);
+  border: solid 1px var(--watermelon);
+  border-radius: 3px;
+}
+
+.cat-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.cat-fact {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--grisaille);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cat-fact-text {
+  font-size: 1.6rem;
+  font-family: var(--indie-text);
+}
+
+.cat-upvotes {
+  font-size: 1.2rem;
+  font-family: var(--indie-text);
+}
+
+/* Fox Stuff */
+
+.fox-container {
+  width: 90%;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.fox-getter {
+  font-size: 1.4rem;
+  font-family: var(--patrick);
+  padding: 7px 20px;
+  background: var(--coral);
+  border: solid 1px var(--tomato);
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.fox-container h2 {
+  font-size: 2rem;
+  font-family: var(--indie-text);
+  margin-bottom: 5px;
+}
+
+.fox {
+  height: 80vh;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.fox img {
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+}
