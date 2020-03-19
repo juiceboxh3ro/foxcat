@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
@@ -17,18 +17,23 @@ export default function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Nav />
 
         <Route exact path='/'>
           <h1 className="jpn">猫か狐か、どちらかを選びなさいませ。</h1>
+          <section id="nav-butts">
+            <Link to="catfacts"><button className="nav-butt">猫</button></Link>
+            <Link to="fox"><button className="nav-butt">狐</button></Link>
+          </section>
         </Route>
         
         <Route path='/catfacts'>
+          <Nav />
           <h1>Cat facts</h1>
           <FactsForm />
         </Route>
 
         <Route path='/fox'>
+          <Nav />
           <Fox />
         </Route>
       </div>

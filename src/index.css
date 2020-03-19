@@ -21,10 +21,26 @@ body {
   color: var(--prestige);
 }
 
-/* Universal */
+/* Universal or Top Level */
 
 .App {
   text-align: center;
+}
+
+.nav-butt {
+  font-size: 1.4rem;
+  font-family: var(--patrick);
+  padding: 15px 100px;
+  background: var(--lime-soap);
+  border: 0;
+  border-radius: 3px;
+  margin-top: 75px;
+}
+
+#nav-butts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .nav {
@@ -65,7 +81,7 @@ h1.jpn {
   font-family: var(--patrick);
   padding: 7px 20px;
   background: var(--wild-watermelon);
-  border: solid 1px var(--watermelon);
+  border: none;
   border-radius: 3px;
 }
 
@@ -111,7 +127,7 @@ h1.jpn {
   font-family: var(--patrick);
   padding: 7px 20px;
   background: var(--coral);
-  border: solid 1px var(--tomato);
+  border: none;
   border-radius: 3px;
   margin-bottom: 15px;
 }
